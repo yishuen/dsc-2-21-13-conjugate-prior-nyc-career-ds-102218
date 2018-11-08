@@ -1,5 +1,5 @@
 
-# Conjugate Priors
+# Conjugate Prior Distributions
 
 ## Introduction
 
@@ -8,9 +8,9 @@ In Bayesian probability theory, if the posterior distributions p(θ | X) are in 
 ## Objectives
 
 You will be able to:
-* Understand and describe what a conjugate prior is.
-* Justify the use of a beta prior distribution for bernoulli experiments like a simple coin toss. 
-* Get an overview of a number of different data distributions and their conjugate priors.
+* Understand and describe what a conjugate prior is
+* Justify the use of a beta prior distribution for bernoulli experiments like a simple coin toss
+* Get an overview of a number of different data distributions and their conjugate priors
 
 ## What Is a Conjugate Prior?
 
@@ -106,7 +106,7 @@ $$f(x) = (τ/2π)1/2 exp( -τ(x – μ)2/2 )$$
 For each sampling distribution, assume we have data $x1, x2, …, xn$
 
 
-- If the sampling distribution for x is binomial(m, p) with m known, and the prior distribution is beta(α, β), the posterior distribution for p is $beta(α + Σxi, β + mn – Σxi)$. The Bernoulli is the special case of the binomial with m = 1.
+- If the sampling distribution for x is binomial(m, p) with m known, and the prior distribution is beta(α, β), the posterior distribution for p is $beta(α + Σxi, β + mn – Σx_i)$. The Bernoulli is the special case of the binomial with m = 1.
 
 
 - If the sampling distribution for x is negative binomial(r, p) with r known, and the prior distribution is beta(α, β), the posterior distribution for p is $beta(α + nr, β + Σxi)$. The geometric is the special case of the negative binomial with r = 1.
